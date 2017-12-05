@@ -1,0 +1,17 @@
+@import 'susy'
+@import 'plugins/svg-grid'
+
+$susy: ('columns': susy-repeat(12), 'gutters': 0.25, 'spread': 'narrow', 'container-spread': 'narrow','svg-grid-colors': hsla(180, 40%, 60%, 0.5))
+
+
+body
+	color: blue
+	background: #000 
+.middle
+	background: white susy-svg-grid()
+	max-width: span(10 of 12 set-gutters 60px)
+	color: red
+	//margin: 0 auto
+	margin-left: span(1)
+footer
+	$width: span(3)
